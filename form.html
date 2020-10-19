@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="bg-color">
+            <!--Title-->
+            <h1>EVENT REGISTRATION FORM</h1>
+            <!--Name-->
+            <form action="" method="get" class="form-example" id="form-size">
+                <div class="form-example">
+                    <label for="name">Name </label>
+                    <input type="text" name="name" id="name" required>
+                    <input type="text" name="name" id="name2" required>
+                    <div id="names">
+                        <small id="first">First Name</small>
+                        <small>Last Name</small>
+                    </div>
+                </div>
+                <!--Company-->
+
+                <div class="form-example">
+                    <label for="name">Company </label>
+                    <input type="text" name="company" id="company" required>
+                </div>
+                <!--Email-->
+                <div class="form-example">
+                    <label for="email">Mail </label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+                <!--Phone Number-->
+
+                <div class="form-example">
+                    <label for="phone">Phone </label>
+                    <input id="areaNo" name="areaNo" type="tel" pattern="[+0-9]{3}" required aria-label="Area code">
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{9}" required>
+                    <div id="number">
+                        <small id="ar">Area code</small>
+                        <small>Phone</small>
+                    </div>
+                </div>
+                <!--Drop Down Subjects-->
+                <div class="drop">
+                    <label for="subject">Subject </label>
+                    <select id="subject" required>
+                        <option value="">Choose an option
+                        </option>
+                    </select>
+                </div>
+                <div class="check">
+                    <label for="customer" id="label-custom">Are you an existing customer :
+                    </label>
+                </div>
+                <!--Check box yes or no-->
+                <div id="demo6">
+                    <input type="radio" value="yes" name="demo6" class="demo6" id="demo6-a" required>
+                    <label for="demo6-a">Yes</label>
+                    <input type="radio" value="no" name="demo6" class="demo6" id="demo6-b">
+                    <label for="demo6-b">No</label>
+                </div>
+                <!--Register button-->
+                <input type="submit" value="REGISTER" id="register">
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
